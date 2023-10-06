@@ -6,10 +6,10 @@
 
 .nav {
     background-color:aliceblue;
-    padding: 15px 12px;
+    padding: 2px 12px;
     position: sticky;
-     top: 0%; 
-     z-index: 999;
+    top: 0%; 
+    z-index: 999;
     box-shadow: 5px 6px 10px rgb(18, 18, 18); 
  } 
 
@@ -19,9 +19,12 @@ a {
     /* padding: 18px ; */
 }
 
-
-ul,
-li {
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
     display: inline;
     padding: 25px;
 }
@@ -29,8 +32,10 @@ li {
 button {
     float: right;
 }  
+.logo{
 
- a.ac{
+}
+a.ac{
     background-color: blue;
     color: beige;
     padding: 18px;
@@ -41,11 +46,12 @@ button {
 
 a:hover {
     /* background-color: blue; */
-    color:red;
+    color:rgb(164, 74, 74);
     font-weight: bold;
     /* padding: 19px; */
     /* color: aliceblue; */
-
+    font-size: 18px;
+    transition: font-size 1s;
 }
 button {
     float: right;
@@ -56,13 +62,18 @@ button {
 .inp{
     padding: 3px 40px;
     border-radius: 5px;
-    border: none;
-    width: 350px;
+    border: 1px solid black;
+    width: 330px;
     height: 30px;
     box-shadow: 2px 3px;
      box-shadow: 7px 7px 7px grey;
      border-radius: 5px;
     
+}
+.inp:hover{
+    width: 340px;
+    height: 30px;
+    transition: width 2s;
 }
 
 .pic {
@@ -232,10 +243,14 @@ marquee {
 x,
 img {
     text-align: center;
-    padding-right: 42px;
+    padding-right: 8px;
     padding-top: 12px;
     position: relative;
     /*width: 300px*/
+}
+x,img:hover{
+    padding-right: 5px;
+    transition: padding-right 1s;
 }
 
 .y {
